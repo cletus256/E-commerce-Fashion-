@@ -1,0 +1,619 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    /* background-color: #f0f0f0; */
+}
+.nav-bar{
+    position: fixed;
+}
+
+.Home{
+    position: fixed;
+    display: flex;
+    background-color: #0202026c;
+    background-size: cover;
+    background-position: center;  
+    width: 100%;
+    height: auto;
+    gap: 500px;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.541);
+    /* box-shadow: #010101; */
+}
+.logo{
+    width: 100px;
+    height: 30px;
+    margin: 20px;
+    margin-left: 100px;
+}
+nav{
+    align-items: center;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li{
+    align-items: center;
+    margin-right: 30%;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s ease-in-out 0.2s;
+}
+nav ul li a::after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #34C759;
+    transition: 0.2s ease-in-out 0.2s;
+}
+
+nav ul li a:hover{
+    color: #34C759;
+    border-bottom: 3px solid #34C759;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.cart{
+    cursor: pointer;
+
+}
+
+/* -----------hero-------- */
+
+.hero{
+    /* background-image: url('Images/fashion2-removebg.png'); */
+    background-size: cover;
+    height: 600px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+}
+.hero h1{
+    font-size: 60px;
+    color: #0e0e0e;
+    margin-bottom: 40px;
+}
+.hero-text{
+    margin: 20px;
+    text-align: left;
+    padding-left: 10px
+}
+.hero-text p{
+   padding-bottom: 40px;
+}
+.hero h1 span{
+    color: #1b612c;
+}
+.btn{
+    background-color: #34C759;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+.btn:hover{
+   background-color: #ffffff;
+   color: #34C759;
+   border: 1px solid #010101;
+}
+.hero img{
+    display: flex;
+    width: 40%;
+}
+
+/* --------Cards-------- */
+.cards{
+    width: auto;
+    height: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    background-color: rgb(218, 218, 218);
+    border-radius: 5px;
+    flex-grow: 1;
+    flex-basis: 200;
+}
+.card card-1{
+    background-image: url(Images/clothes/fit.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+button{
+    background-color: #34C759;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+.card button{
+    margin-top: 80px;
+}
+
+.card a{
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    /* background-color: #34C759; */
+    padding: 10px;
+}
+
+/* -------featured product--------- */
+.title{
+    padding-top: 30px;
+    text-align: center;   
+}
+.title h1{
+    font-size: 48px;
+    font-weight: bold;
+    color: #010101;
+}
+.title h2{
+    text-align: center;
+}
+
+#products .prod-card{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #ffffff;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+}
+
+.item img{
+    width: 250px;
+    border-radius: 25px;
+}
+
+.item:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.08);
+}
+
+.products{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+.item .content p{
+    font-size: 14px;
+    padding-top: 5px;
+}
+.item .content span{
+    font-size: 14px;
+    padding-top: 5px;
+}
+.item .content h4{
+    padding: 5px;
+    padding-bottom: 10px;
+}
+
+/* ----------banner--------- */
+#banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url(Images/levels.jpg);
+    width: 100%;
+    height: 250px;
+    color: #ffffff;
+}
+
+#banner div{
+
+}
+#banner p{
+    font-size: 20px;
+
+}
+#banner h1{
+    font-size: 48px;
+}
+#banner span{
+    color: rgb(255, 123, 0);
+}
+
+#banner button{
+    margin-top: 10px;
+    padding: 10px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* -----------New arrivals----------- */
+
+
+/* -------------sm-banner--------------- */
+.sm-banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+.banner-box{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: center;
+    min-width: 380px;
+    height: 250px;
+    background-image: url(Images/clothes/grey.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.banner-box h4{
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px;
+}
+.banner-box h2{
+    font-size: 42px;
+    font-weight: bold;
+    padding: 5px;
+}
+.banner-box span{
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px;
+}
+.banner-box button{
+   padding: 10px;
+   background-color: #01010100;
+   border: 1px solid #ffffff;
+   color: #ffffff;
+   font-size: 16px;
+}
+.banner-box button:hover{
+    background-color: #34C759;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+.sm-banner .banner-box2{
+    background-image: url(Images/clothes/voodo.jpg);
+}
+
+/* --------banner2--------- */
+.banner2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+.banner2 .banner-box{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: left;
+    min-width: 480px;
+    height: 250px;
+    color: #ffffff;
+    padding: 20px;
+}
+.banner2 .banner-box3{
+    background-image: url(Images/clothes/sweater.jpg);
+}
+.banner2 .banner-box4{
+    background-image: url(Images/clothes/sundress\ \(1\).jpg);
+}
+.banner2 .banner-box5{
+    background-image: url(Images/clothes/floral.jpg);
+}
+
+.banner2 h4{
+    font-size: 42px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.banner2 h2{
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(255, 123, 0);
+    cursor: pointer;
+}
+
+/* -----------footer banner--------- */
+#newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url(Images/levels.jpg);
+    background-size: 100%;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.newstext{
+    margin: 30px;
+}
+.form{
+    display: flex;
+    width: 40%;
+    margin-right: 30px;
+}
+#newsletter h4{
+    font-size: 22px;
+    font-weight: 700;
+}
+#newsletter p{
+    font-size: 16px;
+    font-weight: 200;
+    color: #818ea0;
+}
+#newsletter span{
+    color: #ea4203;
+}
+#newsletter input{
+    height: 3.125rem;
+    padding: 0 1.25em;
+    width: 100%;
+    font-size: 14px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+#newsletter button{
+    color: #ffffff;
+    height: 3.125rem;
+    width: 80px;
+    font-weight: bold;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    cursor: pointer;
+}
+
+/* -------------bottom-------------- */
+.bottom{
+    width: auto;
+    height: 300px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px;
+    color: #818ea0;
+}
+.col-1{ 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 10px;
+    list-style: none;
+}
+.col-1 img{
+    width: 40%;
+    height: 80%;
+    padding-bottom: 10px;
+}
+.col-1 h1{
+    font-size: 22px;
+    font-weight: bold;
+    color: #0e0e0e;
+    padding-bottom: 10px;
+}
+.col-1 li a{
+    padding-bottom: 10px;
+    color: #818ea0;
+    text-decoration: none;
+}
+.copyright{
+    
+}
+
+/* ------media query------- */
+@media (max-width:799px) {
+    nav{
+        align-items: flex-start;
+    } 
+
+    nav ul li{
+        align-items: flex-start;
+    }
+    .banner-box{
+        gap: 10px;
+    }
+    .banner2 .banner-box{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: left;
+        min-width: 240px;
+        height: 250px;
+        color: #ffffff;
+        padding: 20px;
+    }
+    .banner2 .banner-box3{
+        background-image: url(Images/clothes/sweater.jpg);
+        width: 200px;
+    }
+    .banner2 .banner-box4{
+        background-image: url(Images/clothes/sundress\ \(1\).jpg);
+        width: 200px;
+    }
+    .banner2 .banner-box5{
+        background-image: url(Images/clothes/floral.jpg);
+        
+    }
+}
+
+@media (max-width:500px) {
+
+    
+    .hero-text{
+        text-align: center;
+    }
+    .hero-text p{
+        color: #ffffff;
+    }
+    .hero img{
+       display: none;
+    }
+    .hero{
+        background-image: url(Images/fashion2-removebg.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    /* ----cards----- */
+    .cards{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 10px;
+    }
+    .Featured-prod{
+        padding-top: 950px;
+    }
+    .item{
+        display: flex;
+        padding-left: 40px;
+    }
+    .item img{
+        
+    }
+    .content{
+        display: flex;
+        align-items: flex-end;
+        margin-left: -220px;
+        color: #ffffff;
+        gap: 15px;
+    }
+    .content h4{
+        font-size: 18px;
+        font-weight: bold;
+       padding-left: 10px;
+    }
+    .content p{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .content span{
+        display: none;
+    }
+
+    .sm-banner{
+        display: inline-block;
+        justify-content: center;
+        gap: 10px;
+        align-items: center; 
+        text-align: center;
+        
+    }
+    .banner-box{
+        padding-top: 10px;
+        min-width: 300px;
+    }
+    .banner-box h4{
+        font-size: 16px;
+        font-weight: 500;
+        padding: 5px;
+    }
+    .banner-box h2{
+        font-size: 30px;
+        font-weight: bold;
+        padding: 5px;
+    }
+    .banner-box span{
+        font-size: 16px;
+        font-weight: 500;
+        padding: 10px;
+        text-align: center;
+    }
+    .banner-box button{
+       padding: 10px;
+       background-color: #01010100;
+       border: 1px solid #ffffff;
+       color: #ffffff;
+       font-size: 16px;
+    }
+
+    .banner2{
+        display: inline-block;
+        justify-content: center;
+        gap: 10px;
+    }
+    .banner-box .banner-box3{
+        padding-top: 10px;
+    }
+    .banner2 .banner-box4{
+        max-width: 250px;
+        padding-top: 10px;
+    }
+
+    #newsletter input{
+        height: 3.125rem;
+        padding: 0 1.25em;
+        width: 300px;
+        font-size: 14px;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        outline: none;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    #newsletter{
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
